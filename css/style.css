@@ -1,0 +1,83 @@
+
+body
+{
+    padding: 0%;
+    margin: 0%;
+}
+.main
+{
+    height:100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containt
+{
+    height: 90vh;
+    width: 80vw;
+    background-color: lightgray;
+}
+h2
+{
+    text-align: center;
+}
+.world
+{
+    height: 30%;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.card
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle
+{
+    width: 60%;
+    height: 70%;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.o
+{
+    background-color: orange;
+}
+.g
+{
+    background-color: green;
+}
+.r
+{
+    background-color: red;
+}
+input
+{
+    width: 99%;
+    height: 15px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+}
+input:focus
+{
+    outline: none;
+}
+.cname
+{
+    text-align: center;
+}

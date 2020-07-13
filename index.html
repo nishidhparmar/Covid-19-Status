@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Status</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body ng-app="Myapp" ng-controller="Myctrl">
+    <div class="main">
+        <div class="containt">
+            <h2>Covid-19 Status</h2>
+            <p class="cname">World Data</p>
+            <div class="world">
+                <div class="card">
+                    <p>Confirmed Cases</p>
+                    <div class="circle o">{{world_data.confirmed.value}}</div>
+                </div>
+                <div class="card">
+                    <p>Recovered Cases</p>
+                    <div class="circle g">{{world_data.recovered.value}}</div>
+                </div>
+                <div class="card">
+                    <p>Death Cases</p>
+                    <div class="circle r">{{world_data.deaths.value}}</div>
+                </div>
+            </div>
+            <input type="text" placeholder="Enter Country" ng-model="country_name" ng-change="get_data()" name="" id="">
+            <p class="cname">{{country_name}}</p>
+            <div class="world" ng-if="country_data">
+                <div class="card">
+                    <p>Confirmed Cases</p>
+                    <div class="circle o">{{country_data.confirmed.value}}</div>
+                </div>
+                <div class="card">
+                    <p>Recovered Cases</p>
+                    <div class="circle g">{{country_data.recovered.value}}</div>
+                </div>
+                <div class="card">
+                    <p>Death Cases</p>
+                    <div class="circle r">{{country_data.deaths.value}}</div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+<!-- <h1>Covid-19 Status</h1>
+<h3>World Data</h3>
+<p>Confirmed Cases : {{world_data.confirmed.value}}</p>
+<p>Recovered Cases : {{world_data.recovered.value}}</p>
+<p>Deaths Cases : {{world_data.deaths.value}}</p>
+
+<input type="text" placeholder="Enter Country" ng-model="country_name" ng-change="get_data()" name="" id="">
+<h3>{{country_name}}</h3>
+<p>Confirmed Cases : {{country_data.confirmed.value}}</p>
+<p>Recovered Cases : {{country_data.recovered.value}}</p>
+<p>Deaths Cases : {{country_data.deaths.value}}</p>
+<p>Last Update : {{country_data.lastUpdate}}</p> -->
+
+</body>
+</html>
